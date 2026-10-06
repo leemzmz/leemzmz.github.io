@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Academic homepage of Mingzhen Li — AI for analog EDA, design knowledge, reasoning, publications, and experience."
+    />
+    <title>Mingzhen Li</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="profile">
+        <img
+          class="portrait"
+          src="assets/images/head.jpg"
+          alt="Portrait of Mingzhen Li"
+          width="170"
+          height="170"
+        />
+
+        <div class="profile-content">
+          <h1>Mingzhen Li</h1>
+          <p class="position">Ph.D., Postdoctoral Researcher</p>
+          <p>
+            <a href="https://www.cse.cuhk.edu.hk/">Department of Computer Science and Engineering</a><br />
+            <a href="https://www.cuhk.edu.hk/english/">The Chinese University of Hong Kong</a>
+          </p>
+          <p>Email: <a href="mailto:leemzmz@outlook.com">leemzmz@outlook.com</a></p>
+        </div>
+      </header>
+
+      <section aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <p>
+          I am currently a postdoctoral researcher at
+          <a href="https://www.cuhk.edu.hk/english/">The Chinese University of Hong Kong (CUHK)</a>,
+          supervised by Prof. <a href="https://www.cse.cuhk.edu.hk/~byu/index.html">Bei Yu</a>. My
+          research focuses on <strong>analog EDA</strong>, with particular emphasis on
+          <strong>analog design knowledge representation for AI</strong>—making domain expertise
+          explicit, structured, and usable.
+        </p>
+      </section>
+
+      <section aria-labelledby="research-title">
+        <h2 id="research-title">Research Overview</h2>
+        <p>
+          Analog IC design is knowledge-intensive. Traceable reasoning offers shortcuts through the
+          design space without relying solely on simulation. We therefore study how to represent this
+          knowledge for AI:
+        </p>
+        <ol>
+          <li>
+            <strong>Symbolic analysis:</strong> generates symbolic transfer-function (TF) and
+            pole–zero (PZ) expressions as explicit evidence for AI reasoning.
+          </li>
+          <li>
+            <strong>Topology abstraction:</strong> extracts analog-specific signal paths to
+            expose the behavioral characteristics of circuit topologies and support graph learning.
+          </li>
+          <li>
+            <strong>Knowledge alignment:</strong> cleans and aligns large-scale design assets from
+            multiple perspectives to support design-oriented IP reuse.
+          </li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+        <div class="project-list">
+          <article>
+            <h3><a href="https://symbolic-lite.com/">Symbolic-Lite</a></h3>
+            <p>
+              A website for symbolic analysis and signal-path abstraction with editable schematics.
+              A backend SDK for LLM integration is available upon request.
+            </p>
+          </article>
+          <article>
+            <h3>Hello-SPICE <span class="project-status">(coming soon)</span></h3>
+            <p>A SPICE simulator for teaching.</p>
+          </article>
+          <article>
+            <h3>AnalogSyn-Benchmark <span class="project-status">(coming soon)</span></h3>
+            <p>
+              A collection of OpAmp and LDO circuits organized by pole–zero (PZ) isomorphism, with
+              symbolic expressions.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="publications-title">
+        <h2 id="publications-title">Publications</h2>
+
+        <h3>Journal Papers</h3>
+        <ul class="publication-list">
+          <li>
+            [J4] Yapeng Li, Peng Xu, <strong>Mingzhen Li</strong>, Tsung-Yi Ho, Bei Yu, and Tinghuan
+            Chen, “Analog Circuit Representation Learning Informed by Kirchhoff’s Current Law,”
+            <em>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</em>,
+            accepted July 2026.
+            <a href="https://doi.org/10.1109/TCAD.2026.3715070">Available here</a>.
+          </li>
+          <li>
+            [J3] <strong>Mingzhen Li</strong>, Bo Li, Bei Yu, and Guoyong Shi,
+            “Compensation-Aware Topology Synthesis of Multistage Op-Amp,”
+            <em>ACM Transactions on Design Automation of Electronic Systems</em>, published online
+            August 4, 2026. <a href="https://doi.org/10.1145/3834780">Available here</a>.
+          </li>
+          <li>
+            [J2] <strong>Mingzhen Li</strong> and Guoyong Shi, “A Signal-Path Recognition Approach
+            to Multistage Op-Amp Pole-Zero Extraction With Applications,”
+            <em>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</em>,
+            vol. 45, no. 7, pp. 3045–3058, 2026.
+            <a href="https://doi.org/10.1109/TCAD.2025.3638265">Available here</a>.
+          </li>
+          <li>
+            [J1] <strong>Mingzhen Li</strong>, Xisheng Zhang, and Guoyong Shi, “Op-Amp sizing via
+            behavioral constraint generation and Gm/ID sampling,”
+            <em>Integration, the VLSI Journal</em>, vol. 105, Art. no. 102503, 2025.
+            <a href="https://doi.org/10.1016/j.vlsi.2025.102503">Available here</a>.
+          </li>
+        </ul>
+
+        <h3>Conference Papers</h3>
+        <ul class="publication-list">
+          <li>
+            [C4] <strong>Mingzhen Li</strong>, Bo Li, Tingjie Yang, and Guoyong Shi, “PZ-Agent: A
+            Symbolic-Engine Enhanced LLM Agent for Op-Amp Topology Inquisition,” in
+            <em>2025 International Symposium of Electronics Design Automation (ISEDA)</em>, pp.
+            730–735, 2025.
+            <a href="https://doi.org/10.1109/ISEDA65950.2025.11100744">Available here</a>.
+          </li>
+          <li>
+            [C3] Xisheng Zhang, <strong>Mingzhen Li</strong>, Qixu Xie, and Guoyong Shi, “A
+            Subcircuit Matching Approach to Structural Analog Circuit Model Generation and Sizing,”
+            in <em>2024 2nd International Symposium of Electronics Design Automation (ISEDA)</em>,
+            pp. 131–136, 2024.
+            <a href="https://doi.org/10.1109/ISEDA62518.2024.10617871">Available here</a>.
+          </li>
+          <li>
+            [C2] <strong>Mingzhen Li</strong>, Limin Hao, Zhihang Wu, Wei Wu, Leibin Ni, and Guoyong
+            Shi, “An Event-Driven Method for Fast Delay Distribution Estimation of Array
+            Multipliers,” in
+            <em>2023 International Symposium of Electronics Design Automation (ISEDA)</em>, pp.
+            156–161, 2023.
+            <a href="https://doi.org/10.1109/ISEDA59274.2023.10218579">Available here</a>.
+          </li>
+          <li>
+            [C1] Limin Hao, <strong>Mingzhen Li</strong>, Zhihang Wu, Wei Wu, Leibin Ni, and Guoyong
+            Shi, “Test Vector Generation for Array-form Multipliers Using a Genetic Algorithm,” in
+            <em>2023 International Symposium of Electronics Design Automation (ISEDA)</em>, pp.
+            110–115, 2023.
+            <a href="https://doi.org/10.1109/ISEDA59274.2023.10218528">Available here</a>.
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <ul class="summary-list">
+          <li>
+            <strong>Ph.D.</strong>, Shanghai Jiao Tong University, China, 2021–2026 (Advisor: Prof.
+            Guoyong Shi)
+          </li>
+          <li>
+            <strong>M.S. in Electrical Engineering</strong>, Arizona State University, United
+            States, 2014–2016
+          </li>
+          <li>
+            <strong>B.Eng. in Automation</strong>, Nanjing University of Aeronautics and
+            Astronautics, China, 2010–2014
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="service-title">
+        <h2 id="service-title">Academic Service</h2>
+        <ul class="summary-list">
+          <li>
+            <strong>Reviewer</strong>,
+            <em>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</em>
+            (TCAD)
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="teaching-title">
+        <h2 id="teaching-title">Teaching Experience</h2>
+        <ul class="summary-list">
+          <li>
+            <strong>Teaching Assistant</strong>, Mixed-Signal Circuit Design and Automation Methods
+            (Graduate), Shanghai Jiao Tong University — Fall 2023, Fall 2024, Fall 2025
+          </li>
+          <li>
+            <strong>Teaching Assistant</strong>, Introduction to Design Automation (Undergraduate),
+            Shanghai Jiao Tong University — Fall 2022, Spring 2023, Spring 2024
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="work-title">
+        <h2 id="work-title">Related Work Experience</h2>
+        <ul class="summary-list">
+          <li>
+            <strong>Research Intern</strong>, Technical Committee, Primarius Technologies, 2026
+          </li>
+          <li>
+            <strong>Digital Front-end Design</strong>, Huawei HiSilicon, 2018–2021
+            <ul class="subentry-list">
+              <li>
+                <strong>Patent:</strong> “Secure Transmission Method and Apparatus”
+                (<a href="https://patents.google.com/patent/CN114465775A/en">CN114465775A</a>;
+                assigned to Huawei)
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>Last updated: October 2026</p>
+      </footer>
+    </main>
+  </body>
+</html>
