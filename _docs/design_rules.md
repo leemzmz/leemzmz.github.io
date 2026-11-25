@@ -36,3 +36,11 @@
 - 保持 HTML 原始内容完整，确保脚本未加载时仍可阅读。
 - 使用 tablist/tab/tabpanel 语义，选中标签为唯一标签键盘入口。
 - 保留横向溢出、键盘焦点样式与打印时全部展开的行为。
+
+## Git 推送配置
+
+- 当前工作区通过 SSH 连接 `git@github.com:leemzmz/leemzmz.github.io.git`。
+- 使用仓库专用 deploy key：`~/.ssh/leemzmz_github_io_deploy`。
+- 仓库本地 `core.sshCommand` 指定该密钥并启用 `IdentitiesOnly=yes`。
+- 公钥需添加至 GitHub 仓库的 Deploy keys，并启用写入权限后才能推送。
+- 私钥保存在工作区外，不写入文档或提交至 Git。
