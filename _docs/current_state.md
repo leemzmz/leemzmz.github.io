@@ -13,6 +13,8 @@
 - 使用原生 HTML/CSS/JavaScript，无后端或构建依赖。
 - 浏览器加载 `index.html`、样式表、头像及延迟执行的标签页脚本。
 - Projects 使用横向标签页，默认显示首个项目；标签过多时横向滚动。
+- 项目顺序：Symbolic-Lite、PathWeave、Hello-SPICE。
+- PathWeave 链接至其 GitHub 仓库；简介依据仓库 README，概括路径感知图学习与模拟电路宏模型拓扑恢复。
 - Symbolic-Lite 项目介绍注明使用 GPDD 作为符号化引擎。
 - 支持点击、左右方向键循环切换，以及 Home/End 跳转。
 - 禁用 JavaScript 时显示完整项目列表；打印时展示全部项目。
