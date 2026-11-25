@@ -199,6 +199,51 @@ li {
   margin: 0;
 }
 
+.project-tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 3px 3px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.project-tab {
+  flex: 0 0 auto;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.project-tab:hover {
+  color: var(--link);
+  background: #f5f7f9;
+}
+
+.project-tab[aria-selected="true"] {
+  color: var(--link);
+  border-bottom-color: currentColor;
+}
+
+.project-tab:focus-visible,
+.has-project-tabs [role="tabpanel"]:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: -2px;
+}
+
+.has-project-tabs > article {
+  padding: 18px 0 0;
+}
+
+.has-project-tabs > article + article {
+  margin-top: 0;
+}
+
 .project-status {
   color: var(--muted);
   font-size: 0.9em;
@@ -289,6 +334,14 @@ footer p {
 }
 
 @media print {
+  .project-tabs {
+    display: none;
+  }
+
+  .has-project-tabs > article[hidden] {
+    display: block;
+  }
+
   body {
     color: #000;
     font-size: 11pt;

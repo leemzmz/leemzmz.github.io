@@ -9,6 +9,7 @@
     />
     <title>Mingzhen Li</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/projectTabs.js" defer></script>
   </head>
   <body>
     <main class="page">
@@ -72,15 +73,16 @@
 
       <section aria-labelledby="projects-title">
         <h2 id="projects-title">Projects</h2>
-        <div class="project-list">
-          <article>
+        <div class="project-list" data-project-tabs>
+          <article id="project-symbolic-lite">
             <h3><a href="https://symbolic-lite.com">Symbolic-Lite</a></h3>
             <p>
               A continuously maintained website supporting symbolic analysis and signal-path abstraction, with interactive schematic editing.
+              It uses GPDD as its symbolic engine.
               A backend SDK for LLM integration is available upon request.
             </p>
           </article>
-          <article>
+          <article id="project-hello-spice">
             <h3><a href="https://github.com/leemzmz/Hello-SPICE">Hello-SPICE</a></h3>
             <p>A lightweight SPICE simulator for teaching.</p>
           </article>
